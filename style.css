@@ -1,20 +1,29 @@
-﻿.header {
-  background-color: red;
-  grid-area: header;
+body {
+  background: linear-gradient(to right, lightgreen,teal);
 }
 
-.nav {
-  background-color: blue;
+header {
+  background-color: rgba(0,0,0,.2);
+  grid-area: header;
+}
+header h1 {
+  color: mediumspringgreen;
+  text-shadow: 2px 2px 5px navy;
+  font-size: 5vw;
+}
+
+nav {
+  background-color: rgba(0,0,0,.2);
   grid-area: nav;
 }
 
-.main {
-  background-color: yellow;
+main {
+  background-color: rgba(0,0,0,.2);
   grid-area: main;
 }
 
-.footer {
-  background-color: purple;
+footer {
+  background-color: rgba(0,0,0,.2);
   grid-area: footer;
 }
 

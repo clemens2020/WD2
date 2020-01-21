@@ -46,6 +46,7 @@ main {
 main h2 {
   color: navy;
   text-size: 3em;
+  text-align: center;
 }
 main p {
   color: white;
@@ -58,6 +59,7 @@ footer {
 footer p {
   text-size: 1em;
   color: white;
+  text-align: center;
 }
 .container1 {/*for index.html*/
   display:grid;

@@ -11,23 +11,54 @@ header h1 {
   color: mediumspringgreen;
   text-shadow: 2px 2px 5px navy;
   font-size: 5vw;
+  text-align: center;
 }
-
+header h3 {
+  color: navy;
+  text-align: center;
+  font-size: 2vw;
+}
 nav {
   background-color: rgba(0,0,0,.2);
   grid-area: nav;
 }
-
+nav ul {
+  padding: 10px;
+  margin: 0;
+}
+nav li {
+  padding: 10px 10px;
+  list-style-type: none;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+nav a {
+  color: navy;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+}
 main {
   background-color: rgba(0,0,0,.2);
   grid-area: main;
 }
-
+main h2 {
+  color: navy;
+  text-size: 3em;
+}
+main p {
+  color: white;
+  text-size: 1em;
+}
 footer {
   background-color: rgba(0,0,0,.2);
   grid-area: footer;
 }
-
+footer p {
+  text-size: 1em;
+  color: white;
+}
 .container1 {/*for index.html*/
   display:grid;
   grid-template-columns: auto 1fr;

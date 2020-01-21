@@ -53,6 +53,7 @@ main h2 {
 main p {
   color: white;
   text-size: 1em;
+  margin: 5px;
 }
 footer {
   background-color: rgba(0,0,0,.2);

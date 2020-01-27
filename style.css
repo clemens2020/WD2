@@ -48,12 +48,12 @@ main {
 }
 main h2 {
   color: navy;
-  text-size: 3em;
+  font-size: 3em;
   text-align: center;
 }
 main p {
   color: white;
-  text-size: 1em;
+  font-size: 1em;
   margin: 5px;
 }
 footer {
@@ -61,7 +61,7 @@ footer {
   grid-area: footer;
 }
 footer p {
-  text-size: 1em;
+  font-size: 1em;
   color: white;
   text-align: center;
 }

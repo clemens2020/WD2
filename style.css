@@ -1,3 +1,6 @@
+img {
+  max-width:100%;
+}
 body {
   background: linear-gradient(to right, lightgreen,teal);
   font-family: Verdana;
@@ -66,13 +69,85 @@ footer p {
   color: white;
   text-align: center;
 }
-.container1 {/*for index.html*/
-  display:grid;
-  grid-template-columns: auto 1fr;
-  grid-gap: .5em;
-  margin: 1%;
+/*---------------------------Mobile Layout Styles----------------------------*/
+.container1 { /*for index.html*/
+  display: grid;
+  grid-template-columns:100%;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+    }
+
+/*This stuff is for the hamburger menu*/
+.toggleNav {
+    display:grid; /*This is what allows the hamburger icon and "Menu" to display*/
+    text-align:center;
+    font-size:1.5em;
+    font-weight:bold;
+    padding:10px;
+    }
+
+#flex-nav ul {
+    display: none; /*jQuery toggles the nav from to this class to the .open when clicked*/
+    text-align:center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+ 
+#flex-nav ul.open { /*.open is the class that gets toggled when clicked (with help from the jQuery code)*/
+    display:grid;
+    }
+    
+#flex-nav li {
+    padding-left:10px;
+    padding-top:10px;
+    }
+
+
+/*-----------------------Tablet Media Query------------------------*/
+@media only screen and (min-width: 480px)  {
+.container1 { /*for index.html*/
+  grid-template-columns:auto 1fr;
   grid-template-areas:
     "header header"
     "nav main"
     "footer footer";
-}
+    }
+
+
+/* Below will change from hamburger menu to side navigation*/
+  
+.toggleNav {
+    display: none; /*Makes the hamburger icon with the word "Menu" to disappear at this screen size*/
+  }
+  
+#flex-nav ul {
+    display:grid;
+    text-align:left;
+  }
+
+#flex-nav li {
+    padding-left:10px;
+    padding-top:10px;
+  }
+
+	}
+
+/*-----------------------Desktop Media Query------------------------*/
+@media only screen and (min-width: 960px)  {
+
+.container1 { /*for index.html*/
+  grid-template-columns:auto 1fr;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer";
+    }
+	
+
+	}

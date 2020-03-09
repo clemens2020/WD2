@@ -138,7 +138,18 @@ section {
 .fig2 {
   grid-area: fig2;
 }
-
+audio {
+  max-width:100%;
+}
+video {
+  max-width: 100%;
+  height:auto;
+}
+.video, .audio {
+  margin:0;
+  display:grid;
+  justify-content: space-around;
+}
 /*---------------------------Mobile Layout Styles----------------------------*/
 .container1 { /*for index.html*/
   display: grid;
@@ -180,7 +191,17 @@ section {
     "fig2"
     "footer"
     }
-  
+.container4 {/*for travel.html*/
+  display:grid;
+  grid-template-columns: 100%;
+  grid-gap: .5em;
+  margin:1%;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer"
+    }
   
 /*This stuff is for the hamburger menu*/
 .toggleNav {
@@ -250,6 +271,17 @@ section {
     "section"
     "fig1"
     }
+.container4 {/*for travel.html*/
+  display:grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: .5em;
+  margin: 1%;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "nav main"
+    "footer footer"
+    }
 
 /* Below will change from hamburger menu to side navigation*/
   
@@ -307,6 +339,17 @@ section {
     display: grid;
     grid-template-areas:
     "section fig1"
+    }
+.container4 {/*for travel.html*/
+  display:grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: .5em;
+  margin:1%;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "nav main"
+    "footer footer"
     }
 
 	}

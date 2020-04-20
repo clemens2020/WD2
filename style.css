@@ -156,10 +156,8 @@ video {
   display:grid;
   justify-content: space-around;
 }
-.call p {
-  color:navy;
-}
 .call {
+    color:navy;
     text-align:center;
     font-size:2em;
     background-color:darkseagreen;
